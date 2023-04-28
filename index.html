@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <span>pio run -t uploadfs</span> -->
+    <!-- <button onclick="alert('its working hh')">Click Me</button> -->
+    <div class="field row">
+        <!-- <label for="url">device ip address</label> -->
+        <div class="left-side">
+
+            <input type="text" name="url" id="inputUrl" placeholder="enter your url">
+            <button class="btn-connect">Connect</button> <span></span>
+        </div>
+        <div class="right-side">
+            <span class="uptime">00:00</span>
+        </div>
+    </div>
+
+    <div class="throttle">
+        <input type="range" orient="vertical" min="0" max="180" value="0" />
+    </div>
+
+    <div class="joysticks">
+        <div class="controller" id="controller1"></div>
+
+        <div class="lights">
+            
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="controller" id="controller2"></div>
+    </div>
+
+    <div class="information">
+        x => <span id="xCordinate">0</span> and y => <span id="yCordinate">0</span>
+    </div>
+
+
+    <script src="./controller.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
